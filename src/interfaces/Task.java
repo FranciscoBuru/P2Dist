@@ -5,21 +5,22 @@
  */
 package interfaces;
 
+import java.io.Serializable;
+
 /**
  *
  * @author sdist
  */
-public class Task {
+public class Task implements Serializable {
     String tarea;
     String tipo;
     int segundos;
 
-    public Task(String t1, String imagenes, int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
+    
     
 
-    public void Task(String tarea, String tipo, int segundos) {
+    public Task(String tarea, String tipo, int segundos) {
         this.tarea = tarea;
         this.tipo = tipo;
         this.segundos = segundos;
